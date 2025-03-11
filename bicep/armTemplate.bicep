@@ -108,15 +108,7 @@ resource functionApp 'Microsoft.Web/sites@2023-12-01' = {
   kind: 'functionapp'
   properties: {
     httpsOnly: true
-    enabled: true
     serverFarmId: appServicePlan.id
-    reserved: false
-    isXenon: false
-    hyperV: false
-    dnsConfiguration: {}
-    vnetRouteAllEnabled: false
-    vnetImagePullEnabled: false
-    vnetContentShareEnabled: false
     siteConfig: {
       appSettings: [
         {
@@ -148,25 +140,9 @@ resource functionApp 'Microsoft.Web/sites@2023-12-01' = {
           value: '1.0.0'
         }
       ]
-      numberOfWorkers: 1
-      acrUseManagedIdentityCreds: false
-      alwaysOn: false
-      http20Enabled: false
-      functionAppScaleLimit: 200
-      minimumElasticInstanceCount: 0
+      ftpsState: 'FtpsOnly'
+      minTlsVersion: '1.2'
     }
-    scmSiteAlsoStopped: false
-    clientAffinityEnabled: false
-    clientCertEnabled: false
-    clientCertMode: 'Required'
-    hostNamesDisabled: false
-    vnetBackupRestoreEnabled: false
-    containerSize: 1536
-    dailyMemoryTimeQuota: 0
-    redundancyMode: 'None'
-    publicNetworkAccess: 'Enabled'
-    storageAccountRequired: false
-    keyVaultReferenceIdentity: 'SystemAssigned'
   }
   identity: {
     type: 'SystemAssigned'
