@@ -1,0 +1,40 @@
+{
+  "projectType": "azd",
+  "iacTypes": [
+    "bicep"
+  ],
+  "resources": [
+    {
+      "type": "azurefunctions",
+      "instances": [
+        {
+          "name": "api"
+        }
+      ]
+    },
+    {
+      "type": "azurecontainerapp",
+      "instances": [
+        {
+          "name": "src"
+        }
+      ]
+    }
+  ],
+  "bindings": [],
+  "services": [
+    {
+      "host": "${azurefunctions.api}",
+      "language": "python",
+      "project": "api/",
+      "port": "80"
+    },
+    {
+      "host": "${azurecontainerapp.src}",
+      "language": "js",
+      "project": "src/",
+      "port": "80"
+    }
+  ],
+  "settings": []
+}

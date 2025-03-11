@@ -1,0 +1,5 @@
+{
+    "azureFunctions.deploySubpath": "api",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+}

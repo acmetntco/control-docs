@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Foundry Pathfinder Server Control</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <header class="header">
+            <h1>Foundry Pathfinder Server Control</h1>
+        </header>
+        <main>
+            <table id="vmlist-table">
+                <thead>
+                    <tr>
+                        <th>VM Name</th>
+                        <th>Location</th>
+                        <th>Power State</th>
+                        <th>Control</th>
+                    </tr>
+                </thead>
+                <tbody id="vmlist"></tbody>
+            </table>
+            <div id="loading-placeholder">Loading...</div>
+        </main>
+        <footer class="footer">
+            <p>Created by Ben Curran | <a href="https://github.com/bencurrandev/servercontrol-swa">GitHub 💻</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
