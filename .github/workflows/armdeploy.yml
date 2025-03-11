@@ -27,5 +27,4 @@ jobs:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./bicep/armTemplate.bicep
-        parameters: adminpass=${{ secrets.AZURE_ADMIN_PASS }}
         failOnStdErr: false
