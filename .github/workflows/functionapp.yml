@@ -4,7 +4,7 @@
 name: Build and deploy Powershell project to Azure Function App - mineservctrl
 
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main
     paths:

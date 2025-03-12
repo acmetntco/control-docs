@@ -1,6 +1,8 @@
 on:
-  push:
+  workflow_dispatch:
     branches: ["main"]
+        paths:
+        - 'bicep/**/*'
 name: Deploy Bicep Template
 permissions:
   id-token: write
