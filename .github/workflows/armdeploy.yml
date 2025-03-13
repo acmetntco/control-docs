@@ -1,9 +1,5 @@
-on:
-  workflow_dispatch:
-    branches: ["main"]
-        paths:
-        - 'bicep/**/*'
 name: Deploy Bicep Template
+on:  workflow_dispatch
 permissions:
   id-token: write
   contents: read
