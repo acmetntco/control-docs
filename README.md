@@ -1,3 +1,9 @@
+---
+layout: post
+title: MineServ Server Control
+slug: index.html
+
+---
 # MineServ Server Control
 
 ## Description
@@ -21,6 +27,12 @@ To run the app locally, follow these steps:
    ```
 
 2. Open the `index.html` file in your browser.
+
+## Components
+
+[Infrastructure](./bicep/README.md)
+[Static Web App](./src/README.md)
+[API](./api/README.md)
 
 ## Contributing
 
