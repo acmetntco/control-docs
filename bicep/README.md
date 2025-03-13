@@ -1,3 +1,9 @@
+---
+layout: post
+title: MineServ Server Control - Infra
+slug: infra.html
+
+---
 # Bicep Project Documentation
 
 This Bicep project contains templates for deploying resources to Azure. 
