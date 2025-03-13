@@ -2,13 +2,10 @@ name: Publish your documentation
 
 on:
   workflow_dispatch:
-    branches:
-      - main
-      - dev
-      - doctor
+    branches: ['main', 'dev', 'doctor']
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
