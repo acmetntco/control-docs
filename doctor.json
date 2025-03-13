@@ -1,0 +1,53 @@
+{
+    "$schema": "https://raw.githubusercontent.com/estruyf/doctor/dev/schema/1.2.0.json",
+    "folder": "./",
+    "url": "https://msmergecopoc.sharepoint.com/sites/MineServ",
+    "library": "Shared Documents",
+  
+    "disableComments": false,
+  
+    "markdown": {
+      "allowHtml": true,
+      "theme": "Light",
+      "shortcodesFolder": ".doc/shortcodes"
+    },
+  
+    "siteDesign": {
+      "logo": "./src/assets/servctrl.png",
+      "theme": "Red",
+      "chrome": {
+        "headerLayout": "Compact",
+        "headerEmphasis": "Dark"
+      }
+    },
+  
+    "menu": {
+      "QuickLaunch": {
+        "items": [{
+          "id": "servctrl",
+          "name": "ServControl",
+          "url": "",
+          "weight": 2
+        },
+        {
+          "id": "tests",
+          "name": "Test pages",
+          "url": "",
+          "weight": 3
+        }]
+      }
+    },
+  
+    "multilingual": {
+      "enableTranslations": true,
+      "languages": [
+        1043
+      ],
+      "overwriteTranslationsOnChange": true,
+      "translator": {
+        "key": "",
+        "endpoint": "https://api.cognitive.microsofttranslator.com/",
+        "region": "westeurope"
+      }
+    }
+  }

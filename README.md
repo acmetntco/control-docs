@@ -1,3 +1,27 @@
+---
+title: Home
+slug: home.aspx
+layout: Article
+description: "The ServControl documentation homepage"
+
+author: 5
+
+comments: true
+
+header:
+  type: Custom
+  image: '.doc/assets/servcontrol.png'
+  translateX: 55.23
+  translateY: 13.23
+  showTopicHeader: true
+  topicHeader: "ServControl"
+  showPublishDate: true
+
+menu:
+  QuickLaunch:
+    id: Home
+    weight: 1
+---
 # MineServ Server Control
 
 ## Description

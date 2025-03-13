@@ -1,3 +1,17 @@
+---
+title: ServControl Infrastructure
+slug: MineServ/infra.aspx
+draft: false
+layout: Home
+
+comments: false
+
+menu:
+  QuickLaunch:
+    name: Infrastructure
+    id: infra
+    parent: mineserv
+---
 # Bicep Project Documentation
 
 This Bicep project contains templates for deploying resources to Azure. 
