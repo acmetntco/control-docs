@@ -1,10 +1,11 @@
 name: Publish your documentation
 
 on:
-  push:
+  workflow_dispatch:
     branches:
-      - dev
       - main
+      - dev
+      - doctor
 
 jobs:
   build:
