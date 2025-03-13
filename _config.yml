@@ -1,9 +1,14 @@
 plugins:
   - jekyll-relative-links
+  - jekyll-readme-index
 theme: jekyll-theme-minimal
 relative_links:
   enabled: true
   collections: true
+readme_index:
+  enabled:          true
+  remove_originals: true
+  with_frontmatter: true
 include:
   - README.md
   - ./bicep/README.md
