@@ -31,7 +31,9 @@ To run the app locally, follow these steps:
 ## Components
 
 [Infrastructure](./bicep/README.md)
+
 [Static Web App](./src/README.md)
+
 [API](./api/README.md)
 
 ## Contributing
